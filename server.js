@@ -58,6 +58,14 @@ app.get('/about', (req, res)=>{
 	});
 });
 
+app.get('/projects', (req, res)=>{
+	res.render('projects.hbs', {
+		pagetitle : 'Projects | this site',
+		pageName : 'Projects',
+		message : 'some stuff'
+	});
+});
+
 app.get('/bad', (req, res)=>{
 	// res.send('<h1>hello Express</h1>');
 	res.send({
